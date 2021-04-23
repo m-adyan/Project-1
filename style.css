@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
+:root {
+    --sucess-color: green;
+    --error-color: orangered;
+}
+
 * {
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 body {
@@ -31,7 +36,7 @@ h2 {
 }
 
 .form-control {
-    margin-bottom:10px;
+    margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
 }
@@ -43,7 +48,7 @@ h2 {
 }
 
 .form-control input {
-    border: 2px solid #ecf0f1 ;
+    border: 2px solid #ecf0f1;
     border-radius: 5px;
     display: block;
     width: 70%;
@@ -54,4 +59,37 @@ h2 {
 .form-control input:focus {
     outline: 0;
     border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--sucess-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: navy;
+    border: 2px solid navy;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
