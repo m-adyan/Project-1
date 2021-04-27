@@ -26,34 +26,34 @@ function showSuccess(input) {
 
 // Event Listeners
 // Create event listener for submit button
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function (e) {
     // Stop page from reloading on submit
     e.preventDefault();
 
     // Check to see if fields meet required field requirement
     // Check if username input is empty
-    if(username.value === '') {
+    if (username.value === '') {
         showError(username, 'Username is required');
     } else {
         showSuccess(username);
     }
 
     // Check if email input is empty
-    if(email.value === '') {
+    if (email.value === '') {
         showError(email, 'Email is required');
     } else {
         showSuccess(email);
     }
 
     // Check if password input is empty
-    if(password.value === '') {
+    if (password.value === '') {
         showError(password, 'Password is required');
     } else {
         showSuccess(password);
     }
 
     // Check if password2 input is empty
-    if(password2.value === '') {
+    if (password2.value === '') {
         showError(password2, 'Confirm Password is required');
     } else {
         showSuccess(password2);
