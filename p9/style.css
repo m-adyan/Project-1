@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Josefin+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- expense headling -->
+        <h1 class="expense-tracker">Expense Tracker</h1>
+        
+        <!-- Current Balance -->
+        <div class="balance">
+            <h1 id="balance">$0.00</h1>
+            <h4>Current Balance</h4>
+        </div>
+
+        <!-- Income -->
+        <div class="inc-exp-container">
+            <div class="income">
+                <h2 id="income">$0.00 <i class="fas fa-sort-up"></i></h2>
+                <h4>income</h4>
+            </div>
+
+           <!-- expense -->
+            <div class="expense">
+                <h2 id="expense">$0.00 <i class="fas fa-sort-down"></i></h2>
+                    <h4>Expense</h4>
+            </div>
+        </div>
+
+        <!-- Transaction History -->
+        <div class="history">
+            <h2 class="title-history">Transaction History</h2>
+            <ul class="history-list" id="history-list">
+                <li class="plus">Salary <span>$5000
+                    <i class="fas fa-sort-up"></i>
+                    <i class="fas fa-trash"></i>
+                </span></li>
+                <li class="minus">Dinner <span>$100
+                    <i class="fas fa-sort-down"></i>
+                    <i class="fas fa-trash"></i>
+                </span></li>
+            </ul>
+        </div>
+
+        <!-- Add/Delete Transaction -->
+        <div class="transaction">
+            <h2 class="transaction-title">Add New Transaction</h2>
+            <label for="text">Description</label>
+            <input type="text" class="description" id="description" placeholder="Enter your Money in / Money out Description">   
+            <label for="text">Add New Transaction</label>
+            <input type="number" class="description" id="amount" placeholder="Enter your Money in / Money out Amount">
+            <button>Add New Transaction</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
