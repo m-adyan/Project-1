@@ -11,7 +11,7 @@ function caclulate() {
   const currency_one = currencyEl_one.value;
   const currency_two = currencyEl_two.value;
 
-  fetch(`https://api.exchangerate-api.com/v6/latest/${currency_one}`)
+  fetch(`https://api.exchangerate-api.com/v4/latest/${currency_one}`)
     .then(res => res.json())
     .then(data => {
       // console.log(data);
