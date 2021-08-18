@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: lightseagreen;
+}
+
+p {
+    text-align: center;
+}
+
+.swap {
+    color: mintcream;
+    background-color: navy;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 40px;
+}
+
+.currency {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select {
+    padding: 10px 20x 10px 20px;
+    border: 1px solid gray;
+    font-size: 16px;
+}
+
+.currency input {
+    border: 0;
+    font-size: 24;
+    text-align: right;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: green;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+select:focus, input:focus, button:focus {
+    outline: 0;
+}
